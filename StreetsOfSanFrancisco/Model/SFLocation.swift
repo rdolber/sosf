@@ -9,7 +9,7 @@ struct SFLocation: Identifiable {
 //  static let kSquareAsset = "squareAsset"
 //  static let kCity = "city"
 //  static let kState = "state"
-//  static let kLocation = "location"
+  static let kLocation = "location"
   
   let id: CKRecord.ID
   let title: String
@@ -19,7 +19,7 @@ struct SFLocation: Identifiable {
 //  let squareAsset: CKAsset!
 //  let city: String
 //  let state: String
-//  let location: CLLocation
+  let location: CLLocation
   
   init(record: CKRecord) {
     self.id           = record.recordID
@@ -30,7 +30,7 @@ struct SFLocation: Identifiable {
 //    self.squareAsset  = record[FPLocation.kSquareAsset] as? CKAsset
 //    self.city         = record[FPLocation.kCity] as? String ?? "NA"
 //    self.state        = record[FPLocation.kState] as? String ?? "NA"
-//    self.location     = record[FPLocation.kLocation] as? CLLocation ?? CLLocation(latitude: 0, longitude: 0)
+    self.location     = record[SFLocation.kLocation] as? CLLocation ?? CLLocation(latitude: 0, longitude: 0)
   }
   
 //  func createSquareImage() -> UIImage {
