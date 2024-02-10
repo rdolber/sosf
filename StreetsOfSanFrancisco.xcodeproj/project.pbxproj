@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		77AC32552B77CC460034EF0B /* StreetsOfSanFranciscoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC32542B77CC460034EF0B /* StreetsOfSanFranciscoApp.swift */; };
-		77AC32572B77CC460034EF0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC32562B77CC460034EF0B /* ContentView.swift */; };
-		77AC32592B77CC460034EF0B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC32582B77CC460034EF0B /* Item.swift */; };
 		77AC325B2B77CC470034EF0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC325A2B77CC470034EF0B /* Assets.xcassets */; };
 		77AC325E2B77CC470034EF0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC325D2B77CC470034EF0B /* Preview Assets.xcassets */; };
 		77AC326A2B77CC470034EF0B /* StreetsOfSanFranciscoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC32692B77CC470034EF0B /* StreetsOfSanFranciscoTests.swift */; };
 		77AC32742B77CC470034EF0B /* StreetsOfSanFranciscoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC32732B77CC470034EF0B /* StreetsOfSanFranciscoUITests.swift */; };
 		77AC32762B77CC470034EF0B /* StreetsOfSanFranciscoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC32752B77CC470034EF0B /* StreetsOfSanFranciscoUITestsLaunchTests.swift */; };
+		77FC54552B77CFA400992702 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC54542B77CFA400992702 /* AppTabView.swift */; };
+		77FC54572B77CFD900992702 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC54562B77CFD900992702 /* LocationMapView.swift */; };
+		77FC54592B77D02D00992702 /* EpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC54582B77D02D00992702 /* EpisodeListView.swift */; };
+		77FC545E2B77D14F00992702 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC545D2B77D14F00992702 /* View+Ext.swift */; };
+		77FC54602B77D16B00992702 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC545F2B77D16B00992702 /* CustomModifiers.swift */; };
+		77FC54622B77D1A500992702 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC54612B77D1A500992702 /* LocationManager.swift */; };
+		77FC54642B77D1D200992702 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC54632B77D1D200992702 /* CloudKitManager.swift */; };
+		77FC54662B77D20F00992702 /* SFLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC54652B77D20F00992702 /* SFLocation.swift */; };
+		77FC54682B77D2BA00992702 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC54672B77D2BA00992702 /* CKRecord+Ext.swift */; };
+		77FC546A2B77D64B00992702 /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC54692B77D64B00992702 /* CKAsset+Ext.swift */; };
+		77FC546C2B77D67A00992702 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC546B2B77D67A00992702 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +46,6 @@
 /* Begin PBXFileReference section */
 		77AC32512B77CC460034EF0B /* StreetsOfSanFrancisco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetsOfSanFrancisco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AC32542B77CC460034EF0B /* StreetsOfSanFranciscoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetsOfSanFranciscoApp.swift; sourceTree = "<group>"; };
-		77AC32562B77CC460034EF0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		77AC32582B77CC460034EF0B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		77AC325A2B77CC470034EF0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77AC325D2B77CC470034EF0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		77AC325F2B77CC470034EF0B /* StreetsOfSanFrancisco.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StreetsOfSanFrancisco.entitlements; sourceTree = "<group>"; };
@@ -48,6 +55,17 @@
 		77AC326F2B77CC470034EF0B /* StreetsOfSanFranciscoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetsOfSanFranciscoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AC32732B77CC470034EF0B /* StreetsOfSanFranciscoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetsOfSanFranciscoUITests.swift; sourceTree = "<group>"; };
 		77AC32752B77CC470034EF0B /* StreetsOfSanFranciscoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetsOfSanFranciscoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77FC54542B77CFA400992702 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		77FC54562B77CFD900992702 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		77FC54582B77D02D00992702 /* EpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListView.swift; sourceTree = "<group>"; };
+		77FC545D2B77D14F00992702 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		77FC545F2B77D16B00992702 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		77FC54612B77D1A500992702 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		77FC54632B77D1D200992702 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		77FC54652B77D20F00992702 /* SFLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLocation.swift; sourceTree = "<group>"; };
+		77FC54672B77D2BA00992702 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
+		77FC54692B77D64B00992702 /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
+		77FC546B2B77D67A00992702 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +116,12 @@
 		77AC32532B77CC460034EF0B /* StreetsOfSanFrancisco */ = {
 			isa = PBXGroup;
 			children = (
+				77FC545A2B77D11600992702 /* Utilities */,
+				77AC32852B77CCEB0034EF0B /* Resources */,
+				77AC32842B77CCE10034EF0B /* Views */,
+				77AC32832B77CCD90034EF0B /* ViewModel */,
+				77AC32822B77CCD20034EF0B /* Model */,
 				77AC32542B77CC460034EF0B /* StreetsOfSanFranciscoApp.swift */,
-				77AC32562B77CC460034EF0B /* ContentView.swift */,
-				77AC32582B77CC460034EF0B /* Item.swift */,
-				77AC325A2B77CC470034EF0B /* Assets.xcassets */,
 				77AC325F2B77CC470034EF0B /* StreetsOfSanFrancisco.entitlements */,
 				77AC32602B77CC470034EF0B /* Info.plist */,
 				77AC325C2B77CC470034EF0B /* Preview Content */,
@@ -132,6 +152,77 @@
 				77AC32752B77CC470034EF0B /* StreetsOfSanFranciscoUITestsLaunchTests.swift */,
 			);
 			path = StreetsOfSanFranciscoUITests;
+			sourceTree = "<group>";
+		};
+		77AC32822B77CCD20034EF0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77FC54652B77D20F00992702 /* SFLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77AC32832B77CCD90034EF0B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		77AC32842B77CCE10034EF0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77FC54532B77CF4A00992702 /* Screens */,
+				77FC545F2B77D16B00992702 /* CustomModifiers.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77AC32852B77CCEB0034EF0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77AC325A2B77CC470034EF0B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77FC54532B77CF4A00992702 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				77FC54542B77CFA400992702 /* AppTabView.swift */,
+				77FC54562B77CFD900992702 /* LocationMapView.swift */,
+				77FC54582B77D02D00992702 /* EpisodeListView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		77FC545A2B77D11600992702 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				77FC545C2B77D12B00992702 /* Extensions */,
+				77FC545B2B77D12000992702 /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		77FC545B2B77D12000992702 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				77FC54612B77D1A500992702 /* LocationManager.swift */,
+				77FC54632B77D1D200992702 /* CloudKitManager.swift */,
+				77FC546B2B77D67A00992702 /* Constants.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		77FC545C2B77D12B00992702 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77FC545D2B77D14F00992702 /* View+Ext.swift */,
+				77FC54672B77D2BA00992702 /* CKRecord+Ext.swift */,
+				77FC54692B77D64B00992702 /* CKAsset+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +355,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77AC32572B77CC460034EF0B /* ContentView.swift in Sources */,
-				77AC32592B77CC460034EF0B /* Item.swift in Sources */,
+				77FC54552B77CFA400992702 /* AppTabView.swift in Sources */,
+				77FC546A2B77D64B00992702 /* CKAsset+Ext.swift in Sources */,
+				77FC545E2B77D14F00992702 /* View+Ext.swift in Sources */,
+				77FC54592B77D02D00992702 /* EpisodeListView.swift in Sources */,
+				77FC54622B77D1A500992702 /* LocationManager.swift in Sources */,
+				77FC54572B77CFD900992702 /* LocationMapView.swift in Sources */,
+				77FC546C2B77D67A00992702 /* Constants.swift in Sources */,
+				77FC54682B77D2BA00992702 /* CKRecord+Ext.swift in Sources */,
+				77FC54602B77D16B00992702 /* CustomModifiers.swift in Sources */,
+				77FC54662B77D20F00992702 /* SFLocation.swift in Sources */,
 				77AC32552B77CC460034EF0B /* StreetsOfSanFranciscoApp.swift in Sources */,
+				77FC54642B77D1D200992702 /* CloudKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
